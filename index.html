@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Brabos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container principal">
+        <div class="container__caixa">
+            <h1 class="containder__titulo">Olá, eu sou a sua <strong class="cor_laranja">barbearia!</strong> </h1>  
+            <img src="img/logotipo.png" alt="Los Brabos" class="container__imagem">   
+            <a href="https://app.galaxpay.com.br/clublosbrabos/planosdeassinatura" class="container__botao"> Adquirir plano por assinatura </a>
+            <div id="top">
+            <a onclick= "scrollToBottom()"class="container__botao botao_secundario"> Conheça nossas unidades</a>
+            </div>
+            <p class="container__aviso"></p>
+        </div>
+    </section>
+
+    <section class="container secundario">
+        <img src="img/plataformas.png" alt="computador e celular" class="secundario__imagem">
+        <div class="container__descricao">  
+            <h2 class="descricao__titulo">Acesse do seu jeito</h2>
+            <p class="descricao__texto">Aproveite a tela do computador ou acesse pelo celular.  A sua barbearia cada vez mais perto de você! </p>
+        </div>
+    </section>
+    
+    <section class="container secundario">
+        <div class="container_descricao">
+            <h2 class="descricao__titulo">Por que somos a sua <strong class="cor_laranja">barbearia?</strong> </h2>
+            <p class="descricao__texto"> O cuidado com a sua imagem é nossa prioridade. Oferecemos um ambiente elegante e acolhedor, aliado à expertise de nossos barbeiros, para que você desfrute de um serviço impecável e saia com o visual que sempre desejou, isso só Os Brabos entendem!</p>
+            <a href="https://app.galaxpay.com.br/clublosbrabos/planosdeassinatura" class="container__botao secundario__botao">Assinar plano</a>
+        </div>
+        <img src="img/notebook.png" alt="notebook foto dos barbeiros" class="secundario__imagem">
+    </section>
+    <section class="enderecos">      
+        <div id="bottom"></div>
+        <script>
+          function scrollToBottom() {
+            window.scroll({
+              top: document.body.scrollHeight,
+              behavior: 'smooth' // Animação suave
+            });
+          }
+        </script>
+        <h2 class="enderecos__titulo"> Unidades <strong class="cor_laranja"> Los Brabos</strong> </h2>
+        <ul class="enderecos__lista"> <!--ul é lista-->
+            <li> <!-- li é cada item da lista--> 
+                <img src="img/ipiranga.png" alt="bairro ipiranga" class="endereco__imagem">
+                <h3 class="lista__endereco">Jardim de Alá</h3>
+                <p class="endereco__rua">Rua Almiro Ribeiro de Tolêdo</p>
+            </li>
+            <li>
+                <img src="img/santaluzia.png" alt="bairro santa luzia" class="endereco__imagem">
+                <h3 class="lista__endereco">Santa Luzia</h3>
+                <p class="endereco__rua">Rua Ibitiguaia, 206</p>
+            </li>
+            <li>
+                <img src="img/centro.png" alt="centro" class="endereco__imagem">
+                <h3 class="lista__endereco">Centro</h3>
+                <p class="endereco__rua">Rua São Sebastião, 371</p>
+            </li> 
+        </ul> 
+    </section>
+    
+    <footer class="rodape">
+        <img src="img/logotipo.png" alt="logo" class="rodape__logo">
+        <ul class="rodape__lista">
+            <li class="lista__link">
+                <a href="https://api.whatsapp.com/send/?phone=553299564379&text&type=phone_number&app_absent=0">Contato</a>
+            </li>
+            <li class="lista__link">
+                <a href="https://www.instagram.com/losbrabosbs/">Instagram</a>
+            </li>
+        </ul>
+        <p class="rodape__texto">
+            ®2020 Los Brabos. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+        </p>
+
+    </footer>
+</body>
+</html>
