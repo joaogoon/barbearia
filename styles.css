@@ -148,6 +148,7 @@ body {
 .rodape__texto {
     color: var(--cinza-terceario);
     font-size: 14px;
+    padding: 0 0 1%;
 }
 
 footer a {              
